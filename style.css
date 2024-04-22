@@ -1,0 +1,421 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+
+
+.img{
+    cursor: pointer;
+}
+.nav{
+    position: fixed;
+    font-size: 0.9em;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(241, 244, 245);
+}
+.nav a{
+    margin: 2vh;
+    padding-top: 1.5vh;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+.nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    background: rgb(144, 195, 67);
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition-duration:(0.3s);
+    box-shadow: 0 0 10px(255, 255, 255, 0.8);
+    border-radius: 5px;
+    /* background: linear-gradient(to right, rgb(30, 203, 203), #da1818); */
+}   
+ .nav a:hover::after{
+    transform-origin: right; 
+    transform: scaleX(1);
+    transition-duration: 0.3s; 
+
+} 
+.div, .btn, .btn1{
+    height: 5.5vh;
+    margin: 1vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    width: 17vh;
+    font-size: 2.2vh;
+    color:#fff;
+    border-radius: 0.7vh;
+}
+.btn{
+    background-color: rgb(58, 58, 203);
+    margin-top: 2vh;
+    transition-duration: 0.7s;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+
+}
+.btn1{
+    margin-right: -13vh;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    transition-duration: 0.7s;
+    background: rgb(144, 195, 67);
+
+}
+
+.btn:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn1:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.span{
+    color: rgb(64, 205, 64);
+}
+.container{
+    display: flex;
+    height: 80vh; 
+    justify-content:space-around;
+}
+.h1{
+    color: rgb(45, 43, 43);
+    margin-top: 22vh;
+    margin-left:8vh ;
+    font-size: 6vh;
+}
+.h1>p{
+    /* font-family: sans-serif; */
+    font-size: 20.8px;
+}
+    .h1>.pra{
+        font-weight: normal;
+    color: rgb(57, 58, 67);
+}
+.btn2{
+    cursor: pointer;
+    transform: scaleX(1);
+    transform: scaleY(1.1);
+    margin-left: 13vh;
+    height: 7.5vh;
+    border-radius: 0.8vh;
+    border: 0.5px solid black;
+    width: 26.5vh;
+    
+
+}
+.parent{
+    padding: 10vh;
+    background: rgb(232, 232, 237);
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+}
+.parent>input{
+    height: 7vh;
+    border: 0;
+    margin-left: 3vh;
+    border-radius: 0.5vh;
+    outline: none;
+    align-items: center;
+}
+.parent span{
+    position: absolute;
+    display: flex;
+    height: 7.2vh;
+    border-top-left-radius: 0.7vh;
+    border-bottom-left-radius: 0.7vh;
+    top: 40.3em;
+    align-items: center;
+    pointer-events: none;
+    background: rgb(54, 53, 53);
+    color: white;
+    border-left:1vh;
+    right: 196vh;
+}
+.parent .sp{
+    align-items: center;
+    pointer-events: none;
+    color: white;
+    background: rgb(54, 53, 53);
+    right: 167.1vh;
+    border-bottom-right-radius: 0.7vh; 
+    border-top-right-radius: 0.7vh;
+    width: 5vh;
+    margin-top:1.7px;
+    position: absolute;
+    display: flex;
+    height: 7.2vh;
+
+}
+.parent>button{
+    background-color: white;
+    /* transform: scaleX(1.1); */
+    transform: scaleY(1.1);
+    border: 0;
+    transition-duration: 0.7s;
+    height: 8vh;
+    border-radius: 1.5vh;
+    cursor: pointer;
+}
+.parent>button:hover{
+    transform: scaleX(1.1);
+    background-color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+}
+.child{
+    margin-left: 55vh;
+    margin-top: -8vh;
+    background: rgb(232, 232, 237);
+}
+#btn{
+    border: 0;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    transition-duration: 0.7s;
+    height: 7vh;
+    border-radius: 1.2vh;
+    cursor: pointer;
+    background: rgb(144, 195, 67);
+    color: white;
+    margin-left: 2vh;
+    transition: 0.7s;
+}
+#btn:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.image{
+    padding-top: 2vh;
+    width: 80%;
+    border-radius: 2.7vh;
+}
+.head{
+    color: rgb(25, 24, 24);
+}
+.parent1{
+    display: flex;
+    margin-bottom:7vh;
+    justify-content: space-evenly;
+}
+.parent1>div{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    width: 170px;
+    height: 160px; /* Adjust according to your needs */
+    background:  rgb(232, 250, 248);
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 2vh;
+}
+.parent1>div:hover{
+    transform: scaleX(1.1);
+
+}
+
+.parent1>div>img{
+    margin-left: 7vh;
+    margin-top: 4vh;
+
+}
+.parent1>div>p{
+    /* font-family: sans-serif; */
+    color: rgb(68, 63, 63);
+    margin-left: 10vh;
+}
+.parent1>div>.para{
+    margin-left: 6vh;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.parent2{
+    display:flex;
+    justify-content: center;
+}
+.parent2 img{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    margin: 2vh;
+    transition: 0.7s;
+    border-radius:1.5vh;
+}
+.parent2 img:hover{
+    transform: scaleX(1.1);
+}
+
+.parent3{
+    display: inline-block; /* Keeps the container fitting its content */
+    
+    display: flex;
+    /* font-weight: lighter; */
+    margin-top: 7vh;
+    justify-content: space-evenly;
+}
+.parent3 div img{   
+    border-top-left-radius: 10vh;
+}
+
+.parent3 div h1{
+    /* font-weight: lighter; */
+}
+
+.parent3 div p{
+    color: rgb(100, 97, 97);
+    /* font-weight: lighter; */
+}
+.parent3 .child1 .head3{
+    background: rgb(144, 195, 67);
+    width: 40vh;
+    color: white;
+    height: 34vh;
+    /* font-weight: bold; */
+    border-top-left-radius: 10vh;
+}
+.child2{
+    background: rgb(221, 221, 236);
+    height: 65vh;
+    width: 170vh;
+    margin-top: 4vh;
+}
+
+.child2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.child2 div {
+    background: white;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+}
+.child2 div img{
+    margin-top: 3vh;
+}
+.child2{
+    background-image: url(img/blue\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child2 div p{
+    color: white;
+    margin-top: 7vh;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+.parent4 div h1{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: rgb(58, 53, 53);
+}
+.parent5{
+    display: flex;
+    justify-content: space-evenly;
+}
+.parent5 div p{
+    /* font-weight: bold; */
+    /* font-size: x-large; */
+
+}
+
+.parent5 div img{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    border-radius: 1vh;
+    transition:0.7s;
+    height: 35vh;
+    width: 40vh;
+}
+.parent5 div img:hover{
+    transform: scaleX(1.1);
+}
+
+.img0{
+    border-radius: 1vh;
+    height: 35vh;
+    width: 40vh;
+}
+.parent6{
+    display: flex;
+    margin-top: 20vh;
+    justify-content: space-evenly;
+}
+.parent6 div img{
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    border-radius: 1vh;
+    height: 35vh;
+    width: 40vh;
+    transition:0.7s;
+}
+.parent6 div p{
+    /* font-weight: bold; */
+    /* font-size: x-large; */
+}
+.parent6 div img:hover{
+    transform: scaleX(1.1);
+}
+.parent6 div button{
+    background: rgb(144, 195, 67);
+    border: 0;
+    height: 5vh;
+    border-radius: 1vh;
+    color: white;   
+    width: 20vh;
+    /* font-weight: bold; */
+    /* font-size: large; */
+}
+.parent7{
+    background-image: url(./img/blue\ abckgorund.jpg);
+    background-repeat: none;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+
+    width: 77%;
+    height: 40vh;
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.parent7 div{
+    position: absolute;
+    margin-top: 5vh;
+    /* font-size: x-large; */
+}
+.email{
+    background: none;
+    height: 7vh;
+    outline: none;
+    /* font-size: larger; */
+    margin-top: 17vh;   
+    color:white;
+    border-radius: 0.5vh;
+    width: 64vh;
+    border: 1px solid white;
+}
+.email::placeholder{
+    color: rgb(81, 76, 76);
+    /* font-weight: bold; */
+}
+footer div{
+    margin-top: 7vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+footer div img{
+    width: 210vh;
+}
